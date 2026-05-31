@@ -23,7 +23,7 @@ repository               : "ljyLumos/ljyLumos.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile.png"
+  avatar           : "profile.png"
   name             : "Jiayao Li"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate Student in Computer Science, Tongji University"
