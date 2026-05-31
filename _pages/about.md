@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am **Jiayao Li**, an undergraduate student majoring in **Computer Science and Technology (Elite class)** at **Guohao College, Tongji University**, with a GPA of **4.63/5** (equivalent to **92.6/100**).
+Hi there! I am **Jiayao Li**, an undergraduate student majoring in **Computer Science and Technology (Elite Class)** at **Guohao College, Tongji University**, with a GPA of **4.63/5** (equivalent to **92.6/100**).
 
 I have been granted eligibility for recommended graduate admission for the 2027 cohort and plan to apply for direct Ph.D. programs. My research interests lie in **Embodied AI & Robotics**, **Physical-World AI & Simulation**, and **3D Perception & Spatial Understanding**.
 
@@ -51,7 +51,7 @@ I am particularly interested in how embodied agents can acquire high-quality int
 
 * **2026.05** — Received the **Outstanding Winner & INFORMS Award** in the 2026 MCM/ICM.
 * **2026.05** — Submitted a research manuscript on **LLM reliability in library recommendation and code migration**.
-* **2026.03** — Began **Visual-Language Navigation (VLN)** study, exploring cross-modal grounding, memory compression, and closed-loop error correction in long-horizon navigation tasks.
+* **2026.03** — Began **Vision-and-Language Navigation (VLN)** study, exploring cross-modal grounding, memory compression, and closed-loop error correction in long-horizon navigation tasks.
 * **2026.03** — Started working on an empirical study of **LLM trustworthiness and reliability**.
 * **2025.12** — Submitted a research manuscript on **TwInS: Two-Stream Interactive Joint Learning of Scene Parsing and Geometric Vision Tasks**.
 * **2025.09** — Started working on the **TwInS project**, focusing on scene parsing, stereo matching, optical flow, and cross-task representation learning.
