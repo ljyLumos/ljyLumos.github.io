@@ -8,6 +8,7 @@ publication_sections:
   - heading: "Manuscripts"
     items:
       - title: "Two-Stream Interactive Joint Learning of Scene Parsing and Geometric Vision Tasks"
+        id: "twins-paper"
         authors: "Guanfeng Tang, Hongbo Zhao, Ziwei Long, <strong>Jiayao Li</strong>, Bohong Xiao, Wei Ye, Hanli Wang, Rui Fan"
         venue: "Under review at IEEE Transactions on Intelligent Vehicles. arXiv preprint."
         links:
@@ -40,7 +41,7 @@ publication_sections:
 
       <div class="publication-list">
         {% for item in section.items %}
-          <article class="publication-item">
+          <article class="publication-item"{% if item.id %} id="{{ item.id }}"{% endif %}>
             <h3>{{ item.title }}</h3>
 
             {% if item.authors %}

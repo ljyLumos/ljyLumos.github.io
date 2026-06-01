@@ -240,8 +240,32 @@ html[data-theme="dark"] .focus-keyword-list li {
   margin-bottom: 0.65rem;
 }
 
-.project-card {
+.project-card,
+.publication-item {
   scroll-margin-top: 6rem;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.45rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 0.22rem 0.55rem;
+  border: 1px solid #dbeafe;
+  border-radius: 999px;
+  background: #eff6ff;
+  text-decoration: none;
+  font-size: 0.82rem;
+}
+
+.project-links a:hover {
+  background: #dbeafe;
+  text-decoration: none;
 }
 
 /* ---------- Homepage project previews ---------- */
@@ -388,6 +412,16 @@ html[data-theme="dark"] .project-card h3 {
 
 html[data-theme="dark"] .project-card p {
   color: #f1f5f9;
+}
+
+html[data-theme="dark"] .project-links a {
+  border-color: rgba(82, 173, 200, 0.38);
+  background: rgba(82, 173, 200, 0.16);
+  color: #c7edf7;
+}
+
+html[data-theme="dark"] .project-links a:hover {
+  background: rgba(82, 173, 200, 0.26);
 }
 
 html[data-theme="dark"] .keyword-list li {
