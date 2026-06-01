@@ -39,22 +39,55 @@
 
 /* ---------- Research interests ---------- */
 
-.interest-list {
+.research-focus-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.research-focus-card {
+  position: relative;
+  padding: 1rem 1.05rem;
+  border: 1px solid #e4e7eb;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbfd 100%);
+  box-shadow: 0 2px 10px rgba(30, 41, 59, 0.04);
+}
+
+.research-focus-card h3 {
+  margin-bottom: 0.5rem;
+  color: #2f6f8f;
+  font-size: 1.12rem;
+}
+
+.research-focus-card p {
+  margin-bottom: 0.7rem;
+}
+
+.research-focus-step {
+  margin-bottom: 0.45rem !important;
+  color: #94a3b8;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.focus-keyword-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 0.38rem;
   padding-left: 0;
-  margin-left: 0;
+  margin: 0;
   list-style: none;
 }
 
-.interest-list li {
-  padding: 0.38rem 0.7rem;
-  border: 1px solid #d9e2ec;
+.focus-keyword-list li {
+  padding: 0.24rem 0.52rem;
   border-radius: 999px;
-  background: #f7fafc;
-  font-size: 0.9rem;
-  line-height: 1.3;
+  background: #eef6fb;
+  color: #2f6f8f;
+  font-size: 0.74rem;
+  line-height: 1.25;
 }
 
 /* ---------- Project cards ---------- */
@@ -217,13 +250,17 @@
 /* ---------- Mobile optimization ---------- */
 
 @media (max-width: 768px) {
+  .research-focus-list {
+    grid-template-columns: 1fr;
+  }
+
   .project-card,
   .project-item,
   .publication-item {
     padding: 0.9rem 0.95rem;
   }
 
-  .interest-list,
+  .focus-keyword-list,
   .keyword-list {
     gap: 0.35rem;
   }
