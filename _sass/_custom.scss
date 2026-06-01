@@ -39,37 +39,94 @@
 
 /* ---------- Research interests ---------- */
 
+.research-interests {
+  margin-top: 2.4rem;
+}
+
+.research-focus-lead {
+  max-width: 46rem;
+  margin: -0.2rem 0 1rem;
+  color: #4b5563;
+  font-size: 0.98rem;
+}
+
 .research-focus-list {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.1rem;
+}
+
+.research-focus-list::before {
+  content: "";
+  position: absolute;
+  top: 2.2rem;
+  left: 12%;
+  right: 12%;
+  height: 2px;
+  background: linear-gradient(90deg, #dbeafe, #bae6fd, #d9f99d);
 }
 
 .research-focus-card {
   position: relative;
-  padding: 1rem 1.05rem;
-  border: 1px solid #e4e7eb;
-  border-radius: 14px;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbfd 100%);
-  box-shadow: 0 2px 10px rgba(30, 41, 59, 0.04);
+  z-index: 1;
+  display: flex;
+  min-height: 13.5rem;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #dbe6ef;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(30, 41, 59, 0.07);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.research-focus-card:hover {
+  transform: translateY(-3px);
+  border-color: #b8c8d8;
+  box-shadow: 0 14px 30px rgba(30, 41, 59, 0.1);
+}
+
+.research-focus-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 4px;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(90deg, #52adc8, #8bc6d9);
+}
+
+.research-focus-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
 }
 
 .research-focus-card h3 {
-  margin-bottom: 0.5rem;
-  color: #2f6f8f;
-  font-size: 1.12rem;
+  margin: 0;
+  color: #263f4b;
+  font-size: 1.16rem;
 }
 
 .research-focus-card p {
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.85rem;
+  color: #4b5563;
+  font-size: 0.92rem;
 }
 
 .research-focus-step {
-  margin-bottom: 0.45rem !important;
-  color: #94a3b8;
+  display: inline-flex;
+  width: 2.15rem;
+  height: 2.15rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dbeafe;
+  border-radius: 50%;
+  background: #eff6ff;
+  color: #2f6f8f;
   font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
 }
 
 .focus-keyword-list {
@@ -77,14 +134,15 @@
   flex-wrap: wrap;
   gap: 0.38rem;
   padding-left: 0;
-  margin: 0;
+  margin: auto 0 0;
   list-style: none;
 }
 
 .focus-keyword-list li {
   padding: 0.24rem 0.52rem;
+  border: 1px solid #dcebf4;
   border-radius: 999px;
-  background: #eef6fb;
+  background: #f4f9fc;
   color: #2f6f8f;
   font-size: 0.74rem;
   line-height: 1.25;
@@ -252,6 +310,14 @@
 @media (max-width: 768px) {
   .research-focus-list {
     grid-template-columns: 1fr;
+  }
+
+  .research-focus-list::before {
+    display: none;
+  }
+
+  .research-focus-card {
+    min-height: 0;
   }
 
   .project-card,
