@@ -362,6 +362,55 @@ html[data-theme="dark"] .keyword-list li {
   text-decoration: none;
 }
 
+html[data-theme="dark"] .publications-page .page-lead {
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .publication-section h2 {
+  border-bottom-color: #8aa6b3;
+}
+
+html[data-theme="dark"] .publication-item {
+  border-color: #66737c;
+  background: #3f4448;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="dark"] .publication-item:hover {
+  border-color: #8aa6b3;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
+}
+
+html[data-theme="dark"] .publication-item h3 {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .publication-item p {
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .publication-authors {
+  color: #f8fafc;
+}
+
+html[data-theme="dark"] .publication-venue {
+  color: #dbeafe;
+}
+
+html[data-theme="dark"] .publication-award {
+  color: #fde68a;
+}
+
+html[data-theme="dark"] .publication-links a {
+  border-color: rgba(82, 173, 200, 0.38);
+  background: rgba(82, 173, 200, 0.16);
+  color: #c7edf7;
+}
+
+html[data-theme="dark"] .publication-links a:hover {
+  background: rgba(82, 173, 200, 0.26);
+}
+
 /* ---------- Honors ---------- */
 
 .honor-list {
