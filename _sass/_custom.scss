@@ -246,25 +246,25 @@ html[data-theme="dark"] .focus-keyword-list li {
 }
 
 .project-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-top: 0.45rem;
-  margin-bottom: 0.75rem;
+  margin: 0.85rem 0 0;
+  text-align: right;
 }
 
 .project-links a {
   display: inline-block;
-  padding: 0.22rem 0.55rem;
-  border: 1px solid #dbeafe;
-  border-radius: 999px;
-  background: #eff6ff;
+  color: #2f6f8f;
+  border-bottom: 0;
   text-decoration: none;
   font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.project-links a::after {
+  content: " ->";
 }
 
 .project-links a:hover {
-  background: #dbeafe;
+  color: #245a74;
   text-decoration: none;
 }
 
@@ -415,13 +415,11 @@ html[data-theme="dark"] .project-card p {
 }
 
 html[data-theme="dark"] .project-links a {
-  border-color: rgba(82, 173, 200, 0.38);
-  background: rgba(82, 173, 200, 0.16);
   color: #c7edf7;
 }
 
 html[data-theme="dark"] .project-links a:hover {
-  background: rgba(82, 173, 200, 0.26);
+  color: #e2f8ff;
 }
 
 html[data-theme="dark"] .keyword-list li {
