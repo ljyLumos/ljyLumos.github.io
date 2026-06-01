@@ -37,6 +37,25 @@
   margin-bottom: 0.85rem;
 }
 
+html[data-theme="dark"] .about-intro a,
+html[data-theme="dark"] .about-intro a:visited,
+html[data-theme="dark"] .honor-list a,
+html[data-theme="dark"] .honor-list a:visited,
+html[data-theme="dark"] .news-list a,
+html[data-theme="dark"] .news-list a:visited {
+  color: #c7edf7;
+}
+
+html[data-theme="dark"] .about-intro a:hover,
+html[data-theme="dark"] .about-intro a:focus,
+html[data-theme="dark"] .honor-list a:hover,
+html[data-theme="dark"] .honor-list a:focus,
+html[data-theme="dark"] .news-list a:hover,
+html[data-theme="dark"] .news-list a:focus {
+  color: #e2f8ff;
+  border-bottom-color: #c7edf7;
+}
+
 /* ---------- Research interests ---------- */
 
 .research-interests {
