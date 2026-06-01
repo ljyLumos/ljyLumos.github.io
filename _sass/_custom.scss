@@ -281,6 +281,31 @@
   white-space: nowrap;
 }
 
+html[data-theme="dark"] .project-card {
+  border-color: #66737c;
+  background: #3f4448;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="dark"] .project-card:hover {
+  border-color: #8aa6b3;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
+}
+
+html[data-theme="dark"] .project-card h3 {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .project-card p {
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .keyword-list li {
+  border: 1px solid rgba(82, 173, 200, 0.35);
+  background: rgba(82, 173, 200, 0.16);
+  color: #c7edf7;
+}
+
 /* ---------- Publications ---------- */
 
 .publications-page .page-lead {
