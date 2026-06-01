@@ -267,6 +267,12 @@ html[data-theme="dark"] .focus-keyword-list li {
   margin-bottom: 0.8rem;
 }
 
+.project-media-grid--banner {
+  grid-template-columns: minmax(0, 1fr);
+  margin-top: 0.75rem;
+  margin-bottom: 0.8rem;
+}
+
 .project-media-item {
   display: flex;
   height: clamp(10rem, 22vw, 16rem);
@@ -292,6 +298,10 @@ html[data-theme="dark"] .focus-keyword-list li {
   height: clamp(11rem, 22vw, 15rem);
 }
 
+.project-media-grid--banner .project-media-item {
+  height: clamp(7rem, 13vw, 10rem);
+}
+
 .project-media-item img {
   display: block;
   width: 100%;
@@ -305,6 +315,11 @@ html[data-theme="dark"] .focus-keyword-list li {
 }
 
 .project-media-grid--asymmetric .project-media-item img {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.project-media-grid--banner .project-media-item img {
   object-fit: cover;
   object-position: top center;
 }
@@ -710,7 +725,8 @@ html[data-theme="dark"] .news-list time {
 
   .project-media-item,
   .project-media-grid--single .project-media-item,
-  .project-media-grid--asymmetric .project-media-item {
+  .project-media-grid--asymmetric .project-media-item,
+  .project-media-grid--banner .project-media-item {
     height: auto;
     max-height: none;
   }
