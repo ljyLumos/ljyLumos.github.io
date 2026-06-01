@@ -4,112 +4,91 @@ permalink: /
 title: "About Me"
 author_profile: true
 redirect_from:
-- /about/
-- /about.html
-intro:
-- "Hi there! I am <strong>Jiayao Li</strong>, an undergraduate student majoring in <strong>Computer Science and
-  Technology (Elite Class)</strong> at <strong>Guohao College, Tongji University</strong>, with a GPA of
-<strong>4.63/5</strong> (equivalent to <strong>92.6/100</strong>)."
-- "I have been granted eligibility for recommended graduate admission for the 2027 cohort and plan to apply for direct
-Ph.D. programs. My research interests lie in <strong>Embodied AI & Robotics</strong>, <strong>Physical-World AI &
-  Simulation</strong>, and <strong>3D Perception & Spatial Understanding</strong>."
-- "I am particularly interested in how embodied agents can acquire high-quality interaction data, generalize under
-distribution shifts, diagnose failures, and improve through closed-loop feedback in real-world environments."
-research_interests:
-- "Embodied Intelligence & Robot Learning"
-- "Multi-modal Perception: Vision, Language, Geometry, Touch"
-- "Spatial Understanding & 3D Scene Representation"
-- "Long-horizon Decision-making & Task Planning"
-- "Failure Diagnosis & Closed-loop Error Correction"
-selected_projects:
-- title: "Scene Parsing and Geometric Vision — Two-Stream Interactive Joint Learning Framework"
-description: "Developed a <strong>two-stream interactive joint learning framework for scene parsing and geometric
-  vision</strong> tasks, enhancing segmentation performance through cross-view geometric information and improving
-semantic segmentation accuracy on vKITTI2, Cityscapes, and KITTI 2015."
-- title: "Single-View 3D Occupancy Prediction and Spatial Perception — ViPOcc Framework"
-description: "Performed monocular 3D occupancy prediction by leveraging depth and semantic-instance priors from visual
-foundation models, an inverse-depth alignment module, and Semantic-guided Non-overlapping Gaussian Mixture Sampling
-(SNOG) to improve spatial perception."
-- title: "Dynamic Robot Navigation — Optimization of 2D LiDAR-Based Pedestrian Detection"
-description: "Developed a <strong>dynamic navigation system</strong> integrating perception and decision-making for
-mobile robot navigation in dynamic environments. The perception module was optimized based on the DR-SPAAM, while the
-decision-making module adopted TD3 reinforcement learning with a four-stage curriculum learning strategy."
-- title: "Vision-and-Language Navigation, VLN — Literature Review and Exploratory Study"
-description: "Conducted a systematic review of recent VLN studies. Summarized key challenges in long-horizon navigation,
-including <strong>cross-modal instruction grounding, memory compression, streaming decision-making, and closed-loop
-  error correction</strong>, with a focus on VLM-as-Brain paradigms."
-honors:
-- "2024-2025 <strong>Qidi Scholarship, Tongji University</strong> (School-wide, top 1.2%)"
-- "2024-2025 <strong>Guo Xie Birong Scholarship, Tongji University</strong> (School-wide, First-Class, top 1.7%)"
-- "2023-2024 & 2024-2025 <strong>Social Activity Scholarship, Tongji University</strong> (School-wide)"
-- "2023-2024 & 2024-2025 <strong>Outstanding Student Cadre, Tongji University</strong> (School-wide)"
-- "[2026.05] <strong>Outstanding Winner & INFORMS Award (Top Prize, 0.12%), Mathematical Contest in Modeling</strong>"
-- "[2026.01] <strong>Second Prize, National Artificial Intelligence Application Scenario Innovation Challenge</strong>"
-- "[2025.12] <strong>Second Prize, Final Round of the 7th Global Campus Artificial Intelligence Algorithm Elite
-  Competition</strong>"
-news:
-- date: "2026.05"
-text: "Received the <strong>Outstanding Winner & INFORMS Award</strong> in the 2026 MCM/ICM."
-- date: "2026.05"
-text: "Submitted a research manuscript on <strong>LLM reliability in library recommendation and code
-  migration</strong>."
-- date: "2026.03"
-text: "Began <strong>Vision-and-Language Navigation (VLN)</strong> study, exploring cross-modal grounding, memory
-compression, and closed-loop error correction in long-horizon navigation tasks."
-- date: "2026.03"
-text: "Started working on an empirical study of <strong>LLM trustworthiness and reliability</strong>."
-- date: "2025.12"
-text: "Submitted a research manuscript on <strong>TwInS: Two-Stream Interactive Joint Learning of Scene Parsing and
-  Geometric Vision Tasks</strong>."
-- date: "2025.09"
-text: "Started working on the <strong>TwInS project</strong>, focusing on scene parsing, stereo matching, optical flow,
-and cross-task representation learning."
+  - /about/
+  - /about.html
 ---
 
 <section class="page-section about-intro">
-  {% for paragraph in page.intro %}
-  <p>{{ paragraph }}</p>
-  {% endfor %}
+  <p>Hi there! I am <strong>Jiayao Li</strong>, an undergraduate student majoring in <strong>Computer Science and Technology (Elite Class)</strong> at <strong>Guohao College, Tongji University</strong>, with a GPA of <strong>4.63/5</strong> (equivalent to <strong>92.6/100</strong>).</p>
+  <p>I have been granted eligibility for recommended graduate admission for the 2027 cohort and plan to apply for direct Ph.D. programs. My research interests lie in <strong>Embodied AI & Robotics</strong>, <strong>Physical-World AI & Simulation</strong>, and <strong>3D Perception & Spatial Understanding</strong>.</p>
+  <p>I am particularly interested in how embodied agents can acquire high-quality interaction data, generalize under distribution shifts, diagnose failures, and improve through closed-loop feedback in real-world environments.</p>
 </section>
 
 <section class="page-section research-interests">
   <h2>Research Interests</h2>
   <ul class="interest-list">
-    {% for interest in page.research_interests %}
-    <li>{{ interest }}</li>
-    {% endfor %}
+    <li>Embodied Intelligence & Robot Learning</li>
+    <li>Multi-modal Perception: Vision, Language, Geometry, Touch</li>
+    <li>Spatial Understanding & 3D Scene Representation</li>
+    <li>Long-horizon Decision-making & Task Planning</li>
+    <li>Failure Diagnosis & Closed-loop Error Correction</li>
   </ul>
 </section>
 
 <section class="page-section selected-projects">
   <h2>Selected Projects</h2>
   <div class="project-list">
-    {% for project in page.selected_projects %}
     <article class="project-item">
-      <h3>{{ project.title }}</h3>
-      <p>{{ project.description }}</p>
+      <h3>Scene Parsing and Geometric Vision — Two-Stream Interactive Joint Learning Framework</h3>
+      <p>Developed a <strong>two-stream interactive joint learning framework for scene parsing and geometric vision</strong> tasks, enhancing segmentation performance through cross-view geometric information and improving semantic segmentation accuracy on vKITTI2, Cityscapes, and KITTI 2015.</p>
     </article>
-    {% endfor %}
+
+    <article class="project-item">
+      <h3>Single-View 3D Occupancy Prediction and Spatial Perception — ViPOcc Framework</h3>
+      <p>Performed monocular 3D occupancy prediction by leveraging depth and semantic-instance priors from visual foundation models, an inverse-depth alignment module, and Semantic-guided Non-overlapping Gaussian Mixture Sampling (SNOG) to improve spatial perception.</p>
+    </article>
+
+    <article class="project-item">
+      <h3>Dynamic Robot Navigation — Optimization of 2D LiDAR-Based Pedestrian Detection</h3>
+      <p>Developed a <strong>dynamic navigation system</strong> integrating perception and decision-making for mobile robot navigation in dynamic environments. The perception module was optimized based on the DR-SPAAM, while the decision-making module adopted TD3 reinforcement learning with a four-stage curriculum learning strategy.</p>
+    </article>
+
+    <article class="project-item">
+      <h3>Vision-and-Language Navigation, VLN — Literature Review and Exploratory Study</h3>
+      <p>Conducted a systematic review of recent VLN studies. Summarized key challenges in long-horizon navigation, including <strong>cross-modal instruction grounding, memory compression, streaming decision-making, and closed-loop error correction</strong>, with a focus on VLM-as-Brain paradigms.</p>
+    </article>
   </div>
 </section>
 
 <section class="page-section selected-honors">
   <h2>Selected Honors</h2>
   <ul class="honor-list">
-    {% for honor in page.honors %}
-    <li>{{ honor }}</li>
-    {% endfor %}
+    <li>2024-2025 <strong>Qidi Scholarship, Tongji University</strong> (School-wide, top 1.2%)</li>
+    <li>2024-2025 <strong>Guo Xie Birong Scholarship, Tongji University</strong> (School-wide, First-Class, top 1.7%)</li>
+    <li>2023-2024 & 2024-2025 <strong>Social Activity Scholarship, Tongji University</strong> (School-wide)</li>
+    <li>2023-2024 & 2024-2025 <strong>Outstanding Student Cadre, Tongji University</strong> (School-wide)</li>
+    <li>[2026.05] <strong>Outstanding Winner & INFORMS Award (Top Prize, 0.12%), Mathematical Contest in Modeling</strong></li>
+    <li>[2026.01] <strong>Second Prize, National Artificial Intelligence Application Scenario Innovation Challenge</strong></li>
+    <li>[2025.12] <strong>Second Prize, Final Round of the 7th Global Campus Artificial Intelligence Algorithm Elite Competition</strong></li>
   </ul>
 </section>
 
 <section class="page-section news">
   <h2>News</h2>
   <ol class="news-list">
-    {% for item in page.news %}
     <li>
-      <time>{{ item.date }}</time>
-      <span>{{ item.text }}</span>
+      <time>2026.05</time>
+      <span>Received the <strong>Outstanding Winner & INFORMS Award</strong> in the 2026 MCM/ICM.</span>
     </li>
-    {% endfor %}
+    <li>
+      <time>2026.05</time>
+      <span>Submitted a research manuscript on <strong>LLM reliability in library recommendation and code migration</strong>.</span>
+    </li>
+    <li>
+      <time>2026.03</time>
+      <span>Began <strong>Vision-and-Language Navigation (VLN)</strong> study, exploring cross-modal grounding, memory compression, and closed-loop error correction in long-horizon navigation tasks.</span>
+    </li>
+    <li>
+      <time>2026.03</time>
+      <span>Started working on an empirical study of <strong>LLM trustworthiness and reliability</strong>.</span>
+    </li>
+    <li>
+      <time>2025.12</time>
+      <span>Submitted a research manuscript on <strong>TwInS: Two-Stream Interactive Joint Learning of Scene Parsing and Geometric Vision Tasks</strong>.</span>
+    </li>
+    <li>
+      <time>2025.09</time>
+      <span>Started working on the <strong>TwInS project</strong>, focusing on scene parsing, stereo matching, optical flow, and cross-task representation learning.</span>
+    </li>
   </ol>
 </section>

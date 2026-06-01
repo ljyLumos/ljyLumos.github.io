@@ -73,7 +73,7 @@ publication_sections:
             {% if item.links %}
               <p class="publication-links">
                 {% for link in item.links %}
-                  <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} / {% endunless %}
+                  <a href="{{ link.url }}">{{ link.label }}</a>
                 {% endfor %}
               </p>
             {% endif %}

@@ -146,13 +146,15 @@
 }
 
 .publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
   margin-top: 0.45rem;
   margin-bottom: 0.75rem;
 }
 
 .publication-links a {
   display: inline-block;
-  margin-right: 0.35rem;
   padding: 0.22rem 0.55rem;
   border: 1px solid #dbeafe;
   border-radius: 999px;
