@@ -211,6 +211,11 @@
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
+.archive a.home-project-card,
+.archive a.home-project-card:hover {
+  text-decoration: none;
+}
+
 .home-project-card *,
 .home-project-card:hover * {
   border-bottom: 0;
