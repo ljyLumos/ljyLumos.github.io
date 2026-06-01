@@ -1,0 +1,87 @@
+---
+layout: archive
+title: "Publications & Manuscripts"
+permalink: /publications/
+author_profile: true
+intro: "This page lists my selected manuscripts, competition papers, and research project reports. Some works are project manuscripts or under preparation, and are therefore not formal peer-reviewed publications."
+publication_sections:
+  - heading: "Manuscripts"
+    items:
+      - title: "Two-Stream Interactive Joint Learning of Scene Parsing and Geometric Vision Tasks"
+        authors: "Guanfeng Tang, Hongbo Zhao, Ziwei Long, <strong>Jiayao Li</strong>, Bohong Xiao, Wei Ye, Hanli Wang, Rui Fan"
+        venue: "Under review at IEEE Transactions on Intelligent Vehicles. arXiv preprint."
+        links:
+          - label: "arXiv"
+            url: "https://arxiv.org/abs/2602.13588"
+          - label: "PDF"
+            url: "https://arxiv.org/pdf/2602.13588"
+        summary: "This work investigates bidirectional interaction between scene parsing and geometric vision tasks, including semantic segmentation, instance segmentation, stereo matching, and optical flow."
+      - title: "Are LLMs Reliable for Recommending Libraries and Their Usage? An Empirical Study"
+        authors: "Yuying Wang, Yilian Yu, <strong>Jiayao Li</strong>, Maojun Huang, et al."
+        venue: "Under review at Internetware 2026 (CCF C)."
+        summary: "This work empirically studies the reliability of large language models in recommending software libraries and supporting code migration tasks."
+      - title: "Can video generation replace cinematographers? Research on the cinematic language of generated video"
+        authors: "Xiaozhe Li, Kai Wu, Siyi Yang, YiZhan Qu, Guohua Zhang, Zhiyu Chen, <strong>Jiayao Li</strong>, Jiangchuan Mu, et al."
+        venue: "arXiv preprint."
+        links:
+          - label: "arXiv"
+            url: "https://arxiv.org/abs/2412.12223"
+          - label: "PDF"
+            url: "https://arxiv.org/pdf/2412.12223"
+        summary: "This work studies cinematic language in text-to-video generation, focusing on shot framing, angles, and camera movements. It introduces a cinematic language dataset, CameraCLIP for alignment evaluation, and CLIPLoRA for dynamic cinematic style composition."
+  - heading: "Competition Papers"
+    items:
+      - title: "Lunar Colony Transportation Planning and Robust Optimization"
+        authors: "<strong>Jiayao Li</strong>, et al."
+        venue: "2026 Mathematical Contest in Modeling, Problem B."
+        award: "Outstanding Winner & INFORMS Award"
+        summary: "This paper formulates a transportation planning and robust optimization framework for lunar colony logistics under resource, scheduling, and uncertainty constraints."
+  - heading: "Project Reports"
+    items:
+      - title: "Single-View 3D Occupancy Prediction and Spatial Perception — ViPOcc Framework"
+        venue: "Project report / research project."
+        summary: "This project explores monocular 3D occupancy prediction by leveraging depth and semantic-instance priors from visual foundation models, inverse-depth alignment, and semantic-guided sampling strategies."
+      - title: "Dynamic Robot Navigation with 2D LiDAR-Based Pedestrian Detection"
+        venue: "Project report."
+        summary: "This project integrates 2D LiDAR-based pedestrian detection with reinforcement-learning-based dynamic robot navigation in ROS and Gazebo environments."
+---
+
+<section class="page-section publications-page">
+  <p class="page-lead">{{ page.intro }}</p>
+
+  {% for section in page.publication_sections %}
+    <section class="publication-section">
+      <h2>{{ section.heading }}</h2>
+
+      <div class="publication-list">
+        {% for item in section.items %}
+          <article class="publication-item">
+            <h3>{{ item.title }}</h3>
+
+            {% if item.authors %}
+              <p class="publication-authors">{{ item.authors }}</p>
+            {% endif %}
+
+            {% if item.venue %}
+              <p class="publication-venue">{{ item.venue }}</p>
+            {% endif %}
+
+            {% if item.award %}
+              <p class="publication-award"><strong>{{ item.award }}</strong></p>
+            {% endif %}
+
+            {% if item.links %}
+              <p class="publication-links">
+                {% for link in item.links %}
+                  <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} / {% endunless %}
+                {% endfor %}
+              </p>
+            {% endif %}
+
+            <p>{{ item.summary }}</p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</section>

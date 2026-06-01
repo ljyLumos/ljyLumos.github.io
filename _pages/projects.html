@@ -1,0 +1,61 @@
+---
+permalink: /projects/
+title: "Projects"
+author_profile: true
+projects:
+  - title: "Scene Parsing and Geometric Vision — Two-Stream Interactive Joint Learning Framework"
+    description: "Developed a <strong>two-stream interactive joint learning framework for scene parsing and geometric vision</strong> tasks. The framework enhances segmentation performance by incorporating cross-view geometric information from the geometric vision stream, improving semantic segmentation accuracy on vKITTI2, Cityscapes, and KITTI 2015."
+    keywords:
+      - "Scene Parsing"
+      - "Semantic Segmentation"
+      - "Instance Segmentation"
+      - "Stereo Matching"
+      - "Optical Flow"
+      - "Multi-task Learning"
+      - "Geometric Vision"
+  - title: "Single-View 3D Occupancy Prediction and Spatial Perception — ViPOcc Framework"
+    description: "Performed monocular 3D occupancy prediction by leveraging depth and semantic-instance priors from visual foundation models, an inverse-depth alignment module, and Semantic-guided Non-overlapping Gaussian Mixture Sampling (SNOG) to improve spatial perception from RGB images."
+    keywords:
+      - "3D Occupancy Prediction"
+      - "Spatial Understanding"
+      - "Monocular Perception"
+      - "Metric Depth"
+      - "Autonomous Driving"
+  - title: "Dynamic Robot Navigation — Optimization of 2D LiDAR-Based Pedestrian Detection"
+    description: "Developed a <strong>dynamic navigation system</strong> integrating perception and decision-making for mobile robot navigation in dynamic environments. The perception module was optimized based on DR-SPAAM, while the decision-making module adopted TD3 reinforcement learning with a four-stage curriculum learning strategy."
+    keywords:
+      - "2D LiDAR"
+      - "Pedestrian Detection"
+      - "Dynamic Navigation"
+      - "Robot Perception"
+      - "Reinforcement Learning"
+      - "ROS"
+      - "Gazebo"
+  - title: "Vision-and-Language Navigation — Literature Review and Exploratory Study"
+    description: "Conducted a systematic review of recent Vision-and-Language Navigation studies. Summarized key challenges in long-horizon navigation, including <strong>cross-modal instruction grounding, memory compression, streaming decision-making, and closed-loop error correction</strong>, with a focus on VLM-as-Brain paradigms."
+    keywords:
+      - "Vision-and-Language Navigation"
+      - "Embodied AI"
+      - "Cross-modal Grounding"
+      - "Long-horizon Navigation"
+      - "Closed-loop Correction"
+---
+
+<section class="page-section projects-page">
+  <h2>Selected Projects</h2>
+
+  <div class="project-card-list">
+    {% for project in page.projects %}
+      <article class="project-card">
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+
+        <ul class="keyword-list" aria-label="Keywords for {{ project.title }}">
+          {% for keyword in project.keywords %}
+            <li>{{ keyword }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+    {% endfor %}
+  </div>
+</section>
