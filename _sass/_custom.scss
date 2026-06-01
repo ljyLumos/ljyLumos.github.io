@@ -148,6 +148,45 @@
   line-height: 1.25;
 }
 
+html[data-theme="dark"] .research-focus-lead {
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .research-focus-list::before {
+  background: linear-gradient(90deg, rgba(82, 173, 200, 0.7), rgba(138, 166, 179, 0.5), rgba(125, 211, 252, 0.35));
+}
+
+html[data-theme="dark"] .research-focus-card {
+  border-color: #66737c;
+  background: #3f4448;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="dark"] .research-focus-card:hover {
+  border-color: #8aa6b3;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
+}
+
+html[data-theme="dark"] .research-focus-card h3 {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .research-focus-card p {
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .research-focus-step {
+  border-color: rgba(82, 173, 200, 0.38);
+  background: rgba(82, 173, 200, 0.16);
+  color: #c7edf7;
+}
+
+html[data-theme="dark"] .focus-keyword-list li {
+  border-color: rgba(82, 173, 200, 0.35);
+  background: rgba(82, 173, 200, 0.16);
+  color: #c7edf7;
+}
+
 /* ---------- Project cards ---------- */
 
 .project-card-list,
@@ -258,6 +297,34 @@
 
 .home-project-action::after {
   content: " ->";
+}
+
+html[data-theme="dark"] .selected-projects-lead {
+  color: #e2e8f0;
+}
+
+html[data-theme="dark"] .home-project-card {
+  border-color: #66737c;
+  background: #3f4448;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="dark"] .home-project-card:hover {
+  border-color: #8aa6b3;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.32);
+}
+
+html[data-theme="dark"] .home-project-card h3 {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .home-project-card p {
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .home-project-type,
+html[data-theme="dark"] .home-project-action {
+  color: #c7edf7;
 }
 
 /* ---------- Keyword tags ---------- */
@@ -455,6 +522,19 @@ html[data-theme="dark"] .publication-links a:hover {
   min-width: 4.7rem;
   font-weight: 700;
   color: #374151;
+}
+
+html[data-theme="dark"] .news-list {
+  border-left-color: #cbd5e1;
+}
+
+html[data-theme="dark"] .news-list li::before {
+  background: #60a5fa;
+  border-color: #3f4448;
+}
+
+html[data-theme="dark"] .news-list time {
+  color: #c7edf7;
 }
 
 /* ---------- Mobile optimization ---------- */
