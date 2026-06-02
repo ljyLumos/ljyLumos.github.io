@@ -49,20 +49,24 @@ publication_sections:
               <p class="publication-authors">{{ item.authors }}</p>
             {% endif %}
 
-            {% if item.venue %}
-              <p class="publication-venue">{{ item.venue }}</p>
+            {% if item.venue or item.links %}
+              <div class="publication-meta-row">
+                {% if item.venue %}
+                  <p class="publication-venue">{{ item.venue }}</p>
+                {% endif %}
+
+                {% if item.links %}
+                  <p class="publication-links">
+                    {% for link in item.links %}
+                      <a href="{{ link.url }}">{{ link.label }}</a>
+                    {% endfor %}
+                  </p>
+                {% endif %}
+              </div>
             {% endif %}
 
             {% if item.award %}
               <p class="publication-award"><strong>{{ item.award }}</strong></p>
-            {% endif %}
-
-            {% if item.links %}
-              <p class="publication-links">
-                {% for link in item.links %}
-                  <a href="{{ link.url }}">{{ link.label }}</a>
-                {% endfor %}
-              </p>
             {% endif %}
 
             <p>{{ item.summary }}</p>

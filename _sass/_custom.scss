@@ -557,8 +557,16 @@ html[data-theme="dark"] .keyword-list li {
   color: #374151;
 }
 
+.publication-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.65rem;
+  margin-bottom: 0.65rem;
+}
+
 .publication-venue {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0;
   color: #4b5563;
   font-style: italic;
 }
@@ -572,8 +580,7 @@ html[data-theme="dark"] .keyword-list li {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
-  margin-top: 0.45rem;
-  margin-bottom: 0.75rem;
+  margin: 0;
 }
 
 .publication-links a {
