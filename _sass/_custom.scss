@@ -357,6 +357,10 @@ html[data-theme="dark"] .focus-keyword-list li {
   font-weight: 700;
 }
 
+.project-links a + a {
+  margin-left: 0.75rem;
+}
+
 .project-links a::after {
   content: " ->";
 }
