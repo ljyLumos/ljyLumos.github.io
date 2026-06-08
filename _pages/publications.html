@@ -3,76 +3,85 @@ layout: archive
 title: "Publications & Manuscripts"
 permalink: /publications/
 author_profile: true
-intro: "This page lists my selected manuscripts and preprints. Some works are under review or under preparation, and are therefore not formal peer-reviewed publications."
+intro: "This page lists my selected manuscripts and preprints. Some works are under review or under preparation, and are
+therefore not formal peer-reviewed publications."
 publication_sections:
-  - heading: "Manuscripts"
-    items:
-      - title: "Two-Stream Interactive Joint Learning of Scene Parsing and Geometric Vision Tasks"
-        id: "twins-paper"
-        authors: "Guanfeng Tang, Hongbo Zhao, Ziwei Long, <strong>Jiayao Li</strong>, Bohong Xiao, Wei Ye, Hanli Wang, Rui Fan"
-        venue: "Under review at IEEE Transactions on Intelligent Vehicles. arXiv preprint."
-        links:
-          - label: "arXiv"
-            url: "https://arxiv.org/abs/2602.13588"
-          - label: "PDF"
-            url: "https://arxiv.org/pdf/2602.13588"
-        summary: "This work investigates bidirectional interaction between scene parsing and geometric vision tasks, including semantic segmentation, instance segmentation, stereo matching, and optical flow."
-      - title: "Are LLMs Reliable for Recommending Libraries and Their Usage? An Empirical Study"
-        id: "llm-reliability-paper"
-        authors: "Yuying Wang, Yilian Yu, <strong>Jiayao Li</strong>, Maojun Huang, et al."
-        venue: "Under review at Internetware 2026 (CCF C)."
-        summary: "This work empirically studies the reliability of large language models in recommending software libraries and supporting code migration tasks."
-      - title: "Can video generation replace cinematographers? Research on the cinematic language of generated video"
-        authors: "Xiaozhe Li, Kai Wu, Siyi Yang, YiZhan Qu, Guohua Zhang, Zhiyu Chen, <strong>Jiayao Li</strong>, Jiangchuan Mu, et al."
-        venue: "arXiv preprint."
-        links:
-          - label: "arXiv"
-            url: "https://arxiv.org/abs/2412.12223"
-          - label: "PDF"
-            url: "https://arxiv.org/pdf/2412.12223"
-        summary: "This work studies cinematic language in text-to-video generation, focusing on shot framing, angles, and camera movements. It introduces a cinematic language dataset, CameraCLIP for alignment evaluation, and CLIPLoRA for dynamic cinematic style composition."
+- heading: "Manuscripts"
+items:
+- title: "Two-Stream Interactive Joint Learning of Scene Parsing and Geometric Vision Tasks"
+id: "twins-paper"
+authors: "Guanfeng Tang, Hongbo Zhao, Ziwei Long, <strong>Jiayao Li</strong>, Bohong Xiao, Wei Ye, Hanli Wang, Rui Fan"
+venue: "Under review at IEEE Transactions on Intelligent Vehicles. arXiv preprint."
+links:
+- label: "arXiv"
+url: "https://arxiv.org/abs/2602.13588"
+- label: "PDF"
+url: "https://arxiv.org/pdf/2602.13588"
+summary: "This work investigates bidirectional interaction between scene parsing and geometric vision tasks, including
+semantic segmentation, instance segmentation, stereo matching, and optical flow."
+- title: "Are LLMs Reliable for Recommending Libraries and Their Usage? An Empirical Study"
+id: "llm-reliability-paper"
+authors: "Yuying Wang, Yilian Yu, <strong>Jiayao Li</strong>, Maojun Huang, et al."
+venue: "Under review at Internetware 2026 (CCF C)."
+links:
+- label: "PDF"
+url: "/files/publications/are-llms-reliable-library-recommendation-usage.pdf"
+summary: "This work empirically studies the reliability of large language models in recommending software libraries and
+supporting code migration tasks."
+- title: "Can video generation replace cinematographers? Research on the cinematic language of generated video"
+authors: "Xiaozhe Li, Kai Wu, Siyi Yang, YiZhan Qu, Guohua Zhang, Zhiyu Chen, <strong>Jiayao Li</strong>, Jiangchuan Mu,
+et al."
+venue: "arXiv preprint."
+links:
+- label: "arXiv"
+url: "https://arxiv.org/abs/2412.12223"
+- label: "PDF"
+url: "https://arxiv.org/pdf/2412.12223"
+summary: "This work studies cinematic language in text-to-video generation, focusing on shot framing, angles, and camera
+movements. It introduces a cinematic language dataset, CameraCLIP for alignment evaluation, and CLIPLoRA for dynamic
+cinematic style composition."
 ---
 
 <section class="page-section publications-page">
   <p class="page-lead">{{ page.intro }}</p>
 
   {% for section in page.publication_sections %}
-    <section class="publication-section">
-      <h2>{{ section.heading }}</h2>
+  <section class="publication-section">
+    <h2>{{ section.heading }}</h2>
 
-      <div class="publication-list">
-        {% for item in section.items %}
-          <article class="publication-item"{% if item.id %} id="{{ item.id }}"{% endif %}>
-            <h3>{{ item.title }}</h3>
+    <div class="publication-list">
+      {% for item in section.items %}
+      <article class="publication-item" {% if item.id %} id="{{ item.id }}" {% endif %}>
+        <h3>{{ item.title }}</h3>
 
-            {% if item.authors %}
-              <p class="publication-authors">{{ item.authors }}</p>
-            {% endif %}
+        {% if item.authors %}
+        <p class="publication-authors">{{ item.authors }}</p>
+        {% endif %}
 
-            {% if item.venue or item.links %}
-              <div class="publication-meta-row">
-                {% if item.venue %}
-                  <p class="publication-venue">{{ item.venue }}</p>
-                {% endif %}
+        {% if item.venue or item.links %}
+        <div class="publication-meta-row">
+          {% if item.venue %}
+          <p class="publication-venue">{{ item.venue }}</p>
+          {% endif %}
 
-                {% if item.links %}
-                  <p class="publication-links">
-                    {% for link in item.links %}
-                      <a href="{{ link.url }}">{{ link.label }}</a>
-                    {% endfor %}
-                  </p>
-                {% endif %}
-              </div>
-            {% endif %}
+          {% if item.links %}
+          <p class="publication-links">
+            {% for link in item.links %}
+            <a href="{{ link.url }}">{{ link.label }}</a>
+            {% endfor %}
+          </p>
+          {% endif %}
+        </div>
+        {% endif %}
 
-            {% if item.award %}
-              <p class="publication-award"><strong>{{ item.award }}</strong></p>
-            {% endif %}
+        {% if item.award %}
+        <p class="publication-award"><strong>{{ item.award }}</strong></p>
+        {% endif %}
 
-            <p>{{ item.summary }}</p>
-          </article>
-        {% endfor %}
-      </div>
-    </section>
+        <p>{{ item.summary }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
   {% endfor %}
 </section>
