@@ -17,5 +17,7 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "CV"
-    url: /files/Jiayao_Li_CV.pdf
+  # Temporarily hide the CV navigation item while preserving the PDF link.
+  # Uncomment the following two lines to show the CV button again.
+  # - title: "CV"
+  #   url: /files/Jiayao_Li_CV.pdf
